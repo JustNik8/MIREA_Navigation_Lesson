@@ -46,7 +46,7 @@ public class DashBoardFragment extends Fragment {
             }
         });
 
-        binding.bTyumen.setOnClickListener(new View.OnClickListener() {
+        binding.bMoscow.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 City city = createCity("Москва", 12_635_466, MOSCOW_IMAGE_URL);

@@ -10,6 +10,7 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
 import com.bumptech.glide.Glide;
+import com.justnik.mirea_navigation_lesson.R;
 import com.justnik.mirea_navigation_lesson.databinding.FragmentCityBinding;
 import com.justnik.mirea_navigation_lesson.enteties.City;
 
@@ -42,7 +43,11 @@ public class CityFragment extends Fragment {
 
     private void setData() {
         binding.title.setText(city.getName());
-        binding.population.setText(String.valueOf(city.getPopulation()));
+        String formattedPopulation = String.format(
+                requireContext().getString(R.string.population_template),
+                city.getPopulation()
+        );
+        binding.population.setText(formattedPopulation);
         Glide.with(requireContext()).load(city.getImageUrl()).into(binding.imageView);
     }
 
