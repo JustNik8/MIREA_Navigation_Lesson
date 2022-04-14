@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MIREA_Navigation_Lesson">
         <activity
-            android:name=".MainActivity"
+            android:name=".ui.home.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
