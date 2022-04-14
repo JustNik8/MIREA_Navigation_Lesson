@@ -1,7 +1,6 @@
 plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
-    id 'androidx.navigation.safeargs'
 }
 
 android {
@@ -48,8 +47,6 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
 
     //Подключение библиотеки навигации
-    //ktx - расширения для языка Котлин. Если в вашем проекте используется только Java,
-    //то -ktx указывать не нужно
     implementation "androidx.navigation:navigation-fragment:2.4.2"
     implementation "androidx.navigation:navigation-ui:2.4.2"
 

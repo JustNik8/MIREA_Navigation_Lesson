@@ -43,12 +43,17 @@ public class CityFragment extends Fragment {
 
     private void setData() {
         binding.title.setText(city.getName());
+
         String formattedPopulation = String.format(
                 requireContext().getString(R.string.population_template),
                 city.getPopulation()
         );
         binding.population.setText(formattedPopulation);
-        Glide.with(requireContext()).load(city.getImageUrl()).into(binding.imageView);
+
+        Glide.with(requireContext()).
+                load(city.getImageUrl())
+                .placeholder(R.drawable.ic_cloud_download)
+                .into(binding.imageView);
     }
 
     @Override

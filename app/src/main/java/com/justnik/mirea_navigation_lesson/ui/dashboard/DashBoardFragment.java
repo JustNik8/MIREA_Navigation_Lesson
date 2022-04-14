@@ -51,6 +51,7 @@ public class DashBoardFragment extends Fragment {
             public void onClick(View view) {
                 City city = createCity("Москва", 12_635_466, MOSCOW_IMAGE_URL);
                 Bundle bundle = CityFragment.createBundle(city);
+
                 Navigation.findNavController(view).navigate(
                         R.id.action_dashBoardFragment_to_cityFragment,
                         bundle
