@@ -1,3 +1,20 @@
 <resources>
     <string name="app_name">MIREA_Navigation_Lesson</string>
+
+    <string name="home">Главная</string>
+    <string name="dashboard">Панель</string>
+    <string name="account">Аккаунт</string>
+    <string name="detailed_info">Детальная информация</string>
+    <string name="button_cat">Посмотреть котика</string>
+    <string name="button_dog">Не смотреть на котика</string>
+    <string name="back">Назад</string>
+
+    <string name="clickbait">Посмотреть классную фотографию котика\n↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓</string>
+    <string name="hard_layout_desc">Здесь может быть очень очень сложная разметка. Но сейчас это не важно. Главое понять, как навигация работает\nПоэтому выберите один город:</string>
+    <string name="tyumen">Тюмень</string>
+    <string name="moscow">Москва</string>
+
+    <string name="population_template">Население: %s</string>
+    <string name="watch_dog">Раз ты не хочешь смотреть на котика, то смотри на собаку</string>
+    <string name="account_name">Имя аккаунта</string>
 </resources>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/home"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.justnik.mirea_navigation_lesson.ui.home.HomeFragment"
+        android:label="homeFragment"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_homeFragment_to_homeDetailedFragment"
+            app:destination="@id/homeDetailedFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/homeDetailedFragment"
+        android:name="com.justnik.mirea_navigation_lesson.ui.home.HomeDetailedFragment"
+        android:label="fragment_home_detailed"
+        tools:layout="@layout/fragment_home_detailed">
+        <action
+            android:id="@+id/action_homeDetailedFragment_to_catFragment"
+            app:destination="@id/catFragment" />
+        <action
+            android:id="@+id/action_homeDetailedFragment_to_dogFragment"
+            app:destination="@id/dogFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/dogFragment"
+        android:name="com.justnik.mirea_navigation_lesson.ui.home.DogFragment"
+        android:label="DogFragment"
+        tools:layout="@layout/fragment_dog" />
+    <fragment
+        android:id="@+id/catFragment"
+        android:name="com.justnik.mirea_navigation_lesson.ui.home.CatFragment"
+        android:label="CatFragment"
+        tools:layout="@layout/fragment_cat" />
+</navigation>
