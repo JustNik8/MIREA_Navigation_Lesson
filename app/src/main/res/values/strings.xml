@@ -14,7 +14,7 @@
     <string name="tyumen">Тюмень</string>
     <string name="moscow">Москва</string>
 
-    <string name="population_template">Население: %s</string>
+    <string name="population_template">Население: %d</string>
     <string name="watch_dog">Раз ты не хочешь смотреть на котика, то смотри на собаку</string>
     <string name="account_name">Имя аккаунта</string>
 </resources>

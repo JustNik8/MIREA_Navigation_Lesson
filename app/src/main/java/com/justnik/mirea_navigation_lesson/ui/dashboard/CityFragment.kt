@@ -28,7 +28,7 @@ class CityFragment : Fragment(R.layout.fragment_city) {
         with(binding) {
             title.text = city.name
             population.text = String.format(
-                requireContext().getString(R.string.population_template, city.population.toString())
+                requireContext().getString(R.string.population_template, city.population)
             )
 
             Glide.with(requireContext())
